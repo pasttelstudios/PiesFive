@@ -13,6 +13,12 @@ Organize your own game library and play it through the KytyPS5 emulator, with an
 
 ---
 
+> [!IMPORTANT]
+> PiesFive is not affiliated with Sony Interactive Entertainment or PlayStation. The project does
+> not distribute games, emulator binaries or copyrighted system software; all game artwork shown
+> in the app is read locally from your own files. Use only game files that you have obtained
+> legally.
+
 ## What is PiesFive?
 
 PiesFive is a free game launcher for Windows. It gives your PC a clean, controller-first interface in the style of a modern game console: a home screen with your games, user profiles, trophies, settings and a game library, all navigable with a gamepad or keyboard.
@@ -50,12 +56,6 @@ Under the hood, PiesFive does not emulate anything itself. It launches your game
 - DLC / add-on support
 - Emulator version manager with one-click rollback
 - Compatibility badges from the official KytyPS5 compatibility list
-
-## Disclaimer
-
-PiesFive is an unofficial, non-commercial, fan-made project. It is **not affiliated with, endorsed by, or sponsored by Sony Interactive Entertainment**. PlayStation and PS5 are trademarks of Sony Interactive Entertainment; this project uses those names only to describe what it is compatible with.
-
-This repository and the app contain **no copyrighted game data, no game downloads, no emulator binaries and no assets taken from any console**. All game names, covers and artwork that appear inside the app are read locally from files the user already owns. Emulation is legal; downloading games you do not own is not, and this project does not help with that. Users are responsible for using only games they have dumped from their own legally owned copies.
 
 ## Credits
 
