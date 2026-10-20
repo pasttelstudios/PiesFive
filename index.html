@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PiesFive — Tu biblioteca de juegos con estilo de consola</title>
+<meta name="description" content="PiesFive es un launcher gratuito para PC con interfaz estilo PlayStation 5. Organiza tus propios juegos y juégalos con el emulador KytyPS5, con perfiles, partidas y trofeos en un solo lugar.">
+<style>
+  :root{
+    --bg:#000004; --bg2:#0a0a12; --panel:#19171f; --panel2:#211e2b;
+    --text:#f5f5f7; --muted:#a7a7b3; --accent:#2e6db4; --accent2:#5aa2e8;
+    --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;background:
+    radial-gradient(900px 500px at 85% -5%,rgba(46,109,180,.28),transparent 60%),
+    radial-gradient(700px 420px at -10% 30%,rgba(90,162,232,.12),transparent 60%),
+    linear-gradient(180deg,var(--bg2),var(--bg) 40%);
+    z-index:-1}
+  a{color:var(--accent2)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+  /* Nav */
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .logo{font-size:26px;font-weight:700;letter-spacing:.5px}
+  .logo span{color:var(--accent2)}
+  .nav-links{display:flex;gap:14px;align-items:center}
+  .nav-links a{color:var(--muted);text-decoration:none;font-size:15px}
+  .nav-links a:hover{color:var(--text)}
+  /* Buttons */
+  .btn{display:inline-block;padding:14px 34px;border-radius:999px;font-size:17px;font-weight:600;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
+  .btn-primary{background:linear-gradient(180deg,var(--accent2),var(--accent));color:#fff;box-shadow:0 8px 30px rgba(46,109,180,.45)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(46,109,180,.6)}
+  .btn-ghost{border:1px solid rgba(255,255,255,.35);color:var(--text);background:rgba(255,255,255,.04)}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .btn-small{padding:9px 20px;font-size:14px}
+  /* Hero */
+  .hero{text-align:center;padding:70px 0 40px}
+  .badge{display:inline-block;padding:6px 16px;border-radius:999px;background:rgba(46,109,180,.18);border:1px solid rgba(90,162,232,.5);color:var(--accent2);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase}
+  .hero h1{font-size:clamp(52px,9vw,96px);font-weight:300;letter-spacing:2px;margin:22px 0 6px}
+  .hero h1 b{font-weight:700}
+  .hero p.sub{font-size:clamp(18px,2.6vw,23px);color:var(--muted);max-width:720px;margin:0 auto 14px;font-weight:300}
+  .version-note{color:var(--muted);font-size:14px;min-height:22px;margin-bottom:26px}
+  .hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .req-note{margin-top:16px;color:var(--muted);font-size:13.5px}
+  /* Alert */
+  .alert{max-width:860px;margin:44px auto 0;background:rgba(46,109,180,.1);border:1px solid rgba(90,162,232,.45);border-left:5px solid var(--accent2);border-radius:12px;padding:18px 22px;font-size:15px;color:#dbe7f5}
+  .alert b{color:#fff;letter-spacing:.6px}
+  /* Sections */
+  section{padding:64px 0 8px}
+  h2{font-size:34px;font-weight:300;letter-spacing:1px;text-align:center;margin-bottom:8px}
+  .lead{text-align:center;color:var(--muted);max-width:640px;margin:0 auto 36px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+  .card{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:26px;box-shadow:0 0 10px rgba(0,0,0,.9)}
+  .card h3{font-size:19px;margin-bottom:8px;font-weight:600}
+  .card p{color:var(--muted);font-size:15px}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:step}
+  .step{background:var(--panel2);border-radius:var(--radius);padding:24px;border:1px solid rgba(255,255,255,.06)}
+  .step .num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--accent);font-weight:700;margin-bottom:12px}
+  .step h3{font-size:17px;margin-bottom:6px}
+  .step p{color:var(--muted);font-size:14.5px}
+  .req{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+  .req .card{flex:1 1 280px;text-align:center}
+  .roadmap{max-width:640px;margin:0 auto;background:var(--panel);border-radius:var(--radius);padding:28px 34px;border:1px solid rgba(255,255,255,.06)}
+  .roadmap li{margin:8px 0 8px 20px;color:var(--muted)}
+  .roadmap li b{color:var(--text);font-weight:600}
+  /* Footer */
+  footer{margin-top:80px;border-top:1px solid rgba(255,255,255,.09);padding:34px 0 44px;text-align:center;color:var(--muted);font-size:14.5px}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:#fff;text-decoration:underline}
+  footer .dev{margin-top:6px}
+  footer .foot-links{margin-top:14px;display:flex;gap:22px;justify-content:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <div class="logo">Pies<span>Five</span></div>
+    <div class="nav-links">
+      <a href="#funciones">Funciones</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a class="btn btn-ghost btn-small" href="https://github.com/pasttelstudios/PiesFive" target="_blank" rel="noopener">Repositorio en GitHub</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <span class="badge">Active Development</span>
+    <h1>Pies<b>Five</b></h1>
+    <p class="sub">Tu biblioteca de juegos con interfaz estilo PlayStation 5, creada desde cero para PC. Organiza tus propios juegos y juégalos con el emulador KytyPS5, con perfiles, partidas y trofeos en un solo lugar.</p>
+    <div class="version-note" id="versionNote">Buscando la última versión…</div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" id="downloadBtn" href="https://github.com/pasttelstudios/PiesFive/releases/latest">Descargar para Windows</a>
+      <a class="btn btn-ghost" href="https://github.com/pasttelstudios/PiesFive" target="_blank" rel="noopener">Ver el repositorio</a>
+    </div>
+    <p class="req-note">Gratis · Windows 10/11 (64-bit) · Sin juegos incluidos: usa tus propias copias</p>
+
+    <div class="alert">
+      <b>⚠ IMPORTANT:</b> PiesFive no está afiliado a Sony Interactive Entertainment ni a PlayStation. El proyecto no distribuye juegos, binarios del emulador ni software con derechos de autor; el arte de los juegos que ves en la app se lee localmente desde tus propios archivos. Usa solo archivos de juegos que hayas obtenido legalmente.
+    </div>
+  </header>
+
+  <section id="funciones">
+    <h2>Funciones</h2>
+    <p class="lead">Todo lo que necesitas para jugar desde el sofá, mando en mano, sin tocar archivos de configuración.</p>
+    <div class="grid">
+      <div class="card"><h3>Pantalla de inicio estilo consola</h3><p>Tus juegos al frente, con los jugados recientemente primero y el arte de cada título a pantalla completa.</p></div>
+      <div class="card"><h3>Perfiles de usuario</h3><p>Cada perfil tiene su nombre, avatar, partidas y trofeos. Cambiar el nombre de un perfil nunca mueve ni borra tu progreso.</p></div>
+      <div class="card"><h3>Control total del emulador</h3><p>Resolución, pantalla completa, micrófono, cursor y notificaciones de trofeos, todo desde los ajustes de la app.</p></div>
+      <div class="card"><h3>Actualizaciones automáticas</h3><p>PiesFive descarga KytyPS5 desde sus lanzamientos oficiales y lo mantiene al día por ti.</p></div>
+      <div class="card"><h3>Visor de trofeos</h3><p>Consulta los trofeos que has desbloqueado en cada juego, con su progreso.</p></div>
+      <div class="card"><h3>Biblioteca automática</h3><p>Las portadas y la información de cada juego se leen de tus propios archivos, en tu PC.</p></div>
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <h2>Cómo funciona</h2>
+    <p class="lead">PiesFive no emula por sí mismo: prepara todo y lanza tus juegos a través de KytyPS5.</p>
+    <div class="steps">
+      <div class="step"><span class="num">1</span><h3>Agrega tus juegos</h3><p>Añade los juegos que hayas extraído de tu propia consola y tus propias copias.</p></div>
+      <div class="step"><span class="num">2</span><h3>La app los organiza</h3><p>PiesFive lee el nombre y el arte de cada juego desde los propios archivos.</p></div>
+      <div class="step"><span class="num">3</span><h3>Pulsa Jugar</h3><p>El emulador arranca con tu perfil y tus ajustes ya aplicados.</p></div>
+      <div class="step"><span class="num">4</span><h3>Todo queda guardado</h3><p>Partidas y trofeos se guardan por perfil y los ves de vuelta en la interfaz.</p></div>
+    </div>
+  </section>
+
+  <section id="requisitos">
+    <h2>Requisitos</h2>
+    <div class="req">
+      <div class="card"><h3>Windows 10 u 11</h3><p>Sistema operativo de 64-bit.</p></div>
+      <div class="card"><h3>Una PC capaz de correr KytyPS5</h3><p>Consulta los requisitos del propio emulador.</p></div>
+      <div class="card"><h3>Tus propios juegos</h3><p>PiesFive no incluye juegos ni el emulador: los juegos los aportas tú, de tus copias legales.</p></div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <h2>En camino</h2>
+    <p class="lead">Funciones en desarrollo para próximas versiones.</p>
+    <ul class="roadmap">
+      <li><b>Partidas en la nube</b> — respaldo opcional de tus partidas.</li>
+      <li><b>Ajustes por juego</b> — configuración del emulador guardada para cada título.</li>
+      <li><b>Soporte de DLC</b> — contenido adicional de tus juegos.</li>
+      <li><b>Gestor de versiones del emulador</b> — con reversa en un clic si una actualización falla.</li>
+      <li><b>Etiquetas de compatibilidad</b> — el estado de cada juego según la lista oficial de KytyPS5.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div>© 2026 PasttelStudios. Todos los derechos reservados.</div>
+    <div class="dev">Developed by <a href="https://pasttelstudios.com" target="_blank" rel="noopener"><b>PasttelStudios</b></a></div>
+    <div class="foot-links">
+      <a href="https://github.com/pasttelstudios/PiesFive" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/pasttelstudios/PiesFive/releases/latest">Última versión</a>
+      <a href="https://github.com/KytyPS5/KytyPS5" target="_blank" rel="noopener">KytyPS5</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var repo = "pasttelstudios/PiesFive";
+  var btn = document.getElementById("downloadBtn");
+  var note = document.getElementById("versionNote");
+  fetch("https://api.github.com/repos/" + repo + "/releases/latest")
+    .then(function(r){ if(!r.ok) throw new Error("no release"); return r.json(); })
+    .then(function(d){
+      var assets = d.assets || [];
+      var exe = null;
+      for (var i = 0; i < assets.length; i++){
+        if (/\.exe$/i.test(assets[i].name)) { exe = assets[i]; break; }
+      }
+      if (exe) btn.href = exe.browser_download_url;
+      var date = d.published_at ? new Date(d.published_at).toLocaleDateString("es") : "";
+      note.textContent = "Última versión: " + (d.tag_name || d.name || "") + (date ? " · " + date : "");
+    })
+    .catch(function(){
+      note.textContent = "Descarga siempre la última versión publicada.";
+    });
+})();
+</script>
+</body>
+</html>
