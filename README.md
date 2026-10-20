@@ -6,7 +6,7 @@
 Organize your own game library and play it through the KytyPS5 emulator, with an original interface built from scratch to make emulation feel like a console.
 
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/license-freeware-blue)
 ![Status](https://img.shields.io/badge/status-in%20development-orange)
 
 </div>
@@ -15,7 +15,7 @@ Organize your own game library and play it through the KytyPS5 emulator, with an
 
 ## What is PiesFive?
 
-PiesFive is a free, open source game launcher for Windows. It gives your PC a clean, controller-first interface in the style of a modern game console: a home screen with your games, user profiles, trophies, settings and a game library, all navigable with a gamepad or keyboard.
+PiesFive is a free game launcher for Windows. It gives your PC a clean, controller-first interface in the style of a modern game console: a home screen with your games, user profiles, trophies, settings and a game library, all navigable with a gamepad or keyboard.
 
 Under the hood, PiesFive does not emulate anything itself. It launches your games through **[KytyPS5](https://github.com/KytyPS5/KytyPS5)**, the open source PlayStation 5 emulator, and handles the tedious parts for you: installing and updating the emulator, passing the right settings to it, and keeping every profile's saves and trophies organized.
 
@@ -65,4 +65,4 @@ This repository and the app contain **no copyrighted game data, no game download
 
 ## License
 
-PiesFive is released under the [MIT License](LICENSE).
+PiesFive is free for personal use under the [PiesFive Freeware License](LICENSE): free to download and use, but it may not be sold, claimed as someone else's work, or modified and redistributed. PiesFive is not open source at this time; an open source release is planned for the future.
