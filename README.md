@@ -7,7 +7,7 @@ Organize your own game library and play it through the KytyPS5 emulator, with an
 
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![License](https://img.shields.io/badge/license-freeware-blue)
-![Status](https://img.shields.io/badge/status-in%20development-orange)
+![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen)
 
 </div>
 
