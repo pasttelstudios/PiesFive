@@ -1,21 +1,34 @@
-MIT License
+PiesFive - Freeware License
 
-Copyright (c) 2026 PasttelStudios
+Copyright (c) 2026 PasttelStudios. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+PiesFive is free of charge for personal use. You may download, install and
+use the official, unmodified version of PiesFive at no cost.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+You may NOT:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+- Sell, rent, lease, sublicense or otherwise commercialize PiesFive,
+  in whole or in part.
+- Claim PiesFive, its name, its interface or any part of it as your
+  own work.
+- Modify, adapt, translate, decompile or create derivative works
+  based on PiesFive.
+- Redistribute modified copies of PiesFive. Sharing the official,
+  unmodified installer obtained from the official PiesFive repository
+  is permitted.
+
+The source code of PiesFive is not public at this time. PasttelStudios
+plans to release PiesFive as open source in the future; until an
+official announcement and a license change are published in this
+repository, this license applies in full.
+
+PiesFive is provided "as is", without warranty of any kind, express or
+implied. In no event shall PasttelStudios be liable for any claim or
+damages arising from the use of this software.
+
+PiesFive is an unofficial, non-commercial project. It is not affiliated
+with, endorsed by, or sponsored by Sony Interactive Entertainment.
+
+KytyPS5 is a separate project, (c) its respective authors, distributed
+under the GNU General Public License v2.0, and is not covered by this
+license.
