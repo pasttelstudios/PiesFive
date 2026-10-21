@@ -43,6 +43,126 @@ Under the hood, PiesFive does not emulate anything itself. It launches your game
 3. When you press Play, PiesFive starts KytyPS5 with your profile and settings applied.
 4. KytyPS5 stores saves and trophies per user ID, and PiesFive shows them back to you in the interface.
 
+## Screenshots
+
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/whos-playing.png" width="420" alt="Choose Who's Playing"/><br/>
+      <strong>Choose Who's Playing</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/game-library.jpg" width="420" alt="Your Game Library"/><br/>
+      <strong>Your Game Library</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/quick-power-menu.jpg" width="420" alt="Quick Power Menu"/><br/>
+      <strong>Quick Power Menu</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/trophy-collection.png" width="420" alt="Trophy Collection"/><br/>
+      <strong>Trophy Collection</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/emulator-settings.png" width="420" alt="Emulator Settings"/><br/>
+      <strong>Emulator Settings</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/emulator-version-manager.png" width="420" alt="Emulator Version Manager"/><br/>
+      <strong>Emulator Version Manager</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="docs/screenshots/about-piesfive.png" width="420" alt="About PiesFive"/><br/>
+      <strong>About PiesFive</strong>
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary><strong>View more screenshots</strong></summary>
+<br/>
+
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/game-library-horizon.jpg" width="420" alt="Library: Horizon Forbidden West"/><br/>
+      <strong>Library: Horizon Forbidden West</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/game-hub.jpg" width="420" alt="Game Hub"/><br/>
+      <strong>Game Hub</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/control-center.jpg" width="420" alt="Control Center"/><br/>
+      <strong>Control Center</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/store-coming-soon.png" width="420" alt="PiesFive Store (Coming Soon)"/><br/>
+      <strong>PiesFive Store (Coming Soon)</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/settings-general.png" width="420" alt="General Settings"/><br/>
+      <strong>General Settings</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/settings-controllers.png" width="420" alt="Controller Settings"/><br/>
+      <strong>Controller Settings</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/controller-tester.png" width="420" alt="Controller Tester"/><br/>
+      <strong>Controller Tester</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/checking-updates.png" width="420" alt="Checking for Updates"/><br/>
+      <strong>Checking for Updates</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/update-available.png" width="420" alt="Emulator Update Available"/><br/>
+      <strong>Emulator Update Available</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/profile-menu.png" width="420" alt="Profile Menu"/><br/>
+      <strong>Profile Menu</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/edit-profile.png" width="420" alt="Edit Profile and Avatars"/><br/>
+      <strong>Edit Profile and Avatars</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/updating-piesfive.png" width="420" alt="Updating PiesFive"/><br/>
+      <strong>Updating PiesFive</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/choose-avatar.png" width="420" alt="Choose Your Avatar"/><br/>
+      <strong>Choose Your Avatar</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/boot-screen.png" width="420" alt="Boot Screen"/><br/>
+      <strong>Boot Screen</strong>
+    </td>
+  </tr>
+</table>
+
+</details>
+
 ## Requirements
 
 - Windows 10 or 11 (64-bit)
