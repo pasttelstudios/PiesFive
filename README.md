@@ -66,16 +66,6 @@ Under the hood, PiesFive does not emulate anything itself. It launches your game
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/screenshots/game-library-ps4.jpg" width="420" alt="PS4 Games in Your Library"/><br/>
-      <strong>PS4 Games in Your Library</strong>
-    </td>
-    <td align="center" width="50%">
-      <img src="docs/screenshots/shadps4-install.jpg" width="420" alt="Getting ShadPS4 Ready"/><br/>
-      <strong>Getting ShadPS4 Ready</strong>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
       <img src="docs/screenshots/quick-power-menu.jpg" width="420" alt="Quick Power Menu"/><br/>
       <strong>Quick Power Menu</strong>
     </td>
@@ -117,6 +107,16 @@ Under the hood, PiesFive does not emulate anything itself. It launches your game
 <br/>
 
 <table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/game-library-ps4.jpg" width="420" alt="PS4 Games in Your Library"/><br/>
+      <strong>PS4 Games in Your Library</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/screenshots/shadps4-install.jpg" width="420" alt="Getting ShadPS4 Ready"/><br/>
+      <strong>Getting ShadPS4 Ready</strong>
+    </td>
+  </tr>
   <tr>
     <td align="center" width="50%">
       <img src="docs/screenshots/game-library-horizon.jpg" width="420" alt="Library: Horizon Forbidden West"/><br/>
