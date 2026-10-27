@@ -56,7 +56,7 @@ Under the hood, PiesFive does not emulate anything itself. It launches your game
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <img src="docs/screenshots/whos-playing.jpg" width="420" alt="Choose Who's Playing"/><br/>
+      <img src="docs/screenshots/whos-playing.png" width="420" alt="Choose Who's Playing"/><br/>
       <strong>Choose Who's Playing</strong>
     </td>
     <td align="center" width="50%">
@@ -80,7 +80,7 @@ Under the hood, PiesFive does not emulate anything itself. It launches your game
       <strong>Quick Power Menu</strong>
     </td>
     <td align="center" width="50%">
-      <img src="docs/screenshots/trophy-collection.jpg" width="420" alt="Trophy Collection"/><br/>
+      <img src="docs/screenshots/trophy-collection.png" width="420" alt="Trophy Collection"/><br/>
       <strong>Trophy Collection</strong>
     </td>
   </tr>
@@ -149,7 +149,7 @@ Under the hood, PiesFive does not emulate anything itself. It launches your game
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/screenshots/trophy-collection-ps4.jpg" width="420" alt="PS4 Trophy Collection"/><br/>
+      <img src="docs/screenshots/trophy-collection-ps4.png" width="420" alt="PS4 Trophy Collection"/><br/>
       <strong>PS4 Trophy Collection</strong>
     </td>
     <td align="center" width="50%">
@@ -159,11 +159,11 @@ Under the hood, PiesFive does not emulate anything itself. It launches your game
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/screenshots/patch-notes.jpg" width="420" alt="Patch Notes"/><br/>
+      <img src="docs/screenshots/patch-notes.png" width="420" alt="Patch Notes"/><br/>
       <strong>Patch Notes</strong>
     </td>
     <td align="center" width="50%">
-      <img src="docs/screenshots/store-coming-soon.jpg" width="420" alt="PiesFive Store (Coming Soon)"/><br/>
+      <img src="docs/screenshots/store-coming-soon.png" width="420" alt="PiesFive Store (Coming Soon)"/><br/>
       <strong>PiesFive Store (Coming Soon)</strong>
     </td>
   </tr>
@@ -219,11 +219,11 @@ Under the hood, PiesFive does not emulate anything itself. It launches your game
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/screenshots/updating-piesfive.jpg" width="420" alt="Updating PiesFive"/><br/>
+      <img src="docs/screenshots/updating-piesfive.png" width="420" alt="Updating PiesFive"/><br/>
       <strong>Updating PiesFive</strong>
     </td>
     <td align="center" width="50%">
-      <img src="docs/screenshots/choose-avatar.jpg" width="420" alt="Choose Your Avatar"/><br/>
+      <img src="docs/screenshots/choose-avatar.png" width="420" alt="Choose Your Avatar"/><br/>
       <strong>Choose Your Avatar</strong>
     </td>
   </tr>
